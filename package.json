@@ -1,0 +1,26 @@
+{
+  "name": "howstheweather",
+  "version": "1.0.0",
+  "description": "Weather Java script app, consuming an API service",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/carlosprietobarron/howstheweather.git"
+  },
+  "keywords": [],
+  "author": "Carlos Prieto",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/carlosprietobarron/howstheweather/issues"
+  },
+  "homepage": "https://github.com/carlosprietobarron/howstheweather#readme",
+  "dependencies": {
+    "webpack": "^4.44.2"
+  },
+  "devDependencies": {
+    "webpack-cli": "^3.3.12"
+  }
+}
