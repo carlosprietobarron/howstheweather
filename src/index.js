@@ -1,15 +1,25 @@
 import { httpLibrary } from './httpLibrary'
-import { city, geoLib } from './city'
+import { City, geoLib } from './city'
+import { domcon } from './ui'
 
 
-
-
-let cityName='Mombasa,Kenia';
+let cityName='Toluca,Mexico';
  
-geoLib.getGeo(cityName);
+const getDATA = async (cityName,fn) => {
+  const city = await geoLib.getCityNP(cityName);
+  console.log(city);
+  // const city = geoLib.getPromises(cityName);
+  const vari = await fn(cityName);
 
-httpLibrary.get(`api.openweathermap.org/data/2.5/weather?q=${cityName}&appid=a023b91f5807ab913cdcb2fac498122a`)
-   .then(data => console.log(data))
-   .catch(err => console.log(err));
+  console.log(vari);
+  
+}
 
-console.log("finito");
+const initialize = () => {
+  domcon.createIcon();
+}
+
+initialize();
+geoLib.geoLocal();
+//getDATA(cityName, getWeather.getWeaNow);
+
