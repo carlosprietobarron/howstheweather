@@ -23,6 +23,7 @@ module.exports = {
       "guard-for-in": "off",
       "no-restricted-syntax": ["error", "ForInStatement", "LabeledStatement", "WithStatement"],
       "no-alert": "off",
-      "no-restricted-syntax": "off"
+      "no-restricted-syntax": "off",
+      "no-restricted-globals":"off"
     }
 };

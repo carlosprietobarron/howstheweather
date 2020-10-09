@@ -14,24 +14,25 @@ const videoLooper = (function vd() {
   return { videoEndListener, looper };
 }());
 
-const videoLoader =( () => {
-     function putBackgr(parent) {
-      const videoWrap = document.getElementById('vidWraper');
-      
-      const videoEle = document.createElement('div');
-      videoEle.setAttribute('class', 'video');
-      videoWrap.appendChild(videoEle);
+const videoLoader = (() => {
+  function putBackgr() {
+    const videoWrap = document.getElementById('vidWraper');
 
-      const videoFile = document.createElement('video');
-      videoFile.setAttribute('id', 'bgvid');
-      videoFile.setAttribute('width', '320');
-      videoFile.setAttribute('heigth', '240');
-      videoFile.autoplay = true;
-      videoFile.loop = true;
-      videoFile.muted = true;
-      videoFile.src = '../imag/grill.mp4';
-      landDiv.appendChild(videoFile);
-    }
+    const videoEle = document.createElement('div');
+    videoEle.setAttribute('class', 'video');
+    videoWrap.appendChild(videoEle);
+
+    const videoFile = document.createElement('video');
+    videoFile.setAttribute('id', 'bgvid');
+    videoFile.setAttribute('width', '320');
+    videoFile.setAttribute('heigth', '240');
+    videoFile.autoplay = true;
+    videoFile.loop = true;
+    videoFile.muted = true;
+    videoFile.src = '../imag/grill.mp4';
+    landDiv.appendChild(videoFile);
+  }
+  return { putBackgr };
 })();
 
-export { videoLooper, videoLoader }
+export { videoLooper, videoLoader };

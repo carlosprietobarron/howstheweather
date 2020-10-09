@@ -1,4 +1,4 @@
-const domUtils = (() =>{
+const domUtils = (() => {
   const deleteEleContent = (elementId) => {
     const tabContent = document.getElementById(elementId);
     while (tabContent.firstChild) {
