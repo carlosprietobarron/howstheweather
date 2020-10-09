@@ -235,11 +235,11 @@ input[type="range"]:disabled::-ms-fill-upper {
 }
 
 .clickable {
-      border: #151840;;
-      border-style: solid;
-      border-width: 2px;
-      text-shadow: 2px 2px rgb(4, 50, 58);
-      box-shadow: 3px 3px darkslategray;
+  border: #151840;
+  border-style: solid;
+  border-width: 2px;
+  text-shadow: 2px 2px rgb(4, 50, 58);
+  box-shadow: 3px 3px darkslategray;
 }
 
 #imgIcon {
