@@ -13,7 +13,7 @@
 
 ## Live Demo
 
-[HowsTheWeather](https://rawcdn.githack.com/carlosprietobarron/tasklist-canda/62af1af50774c957514ac60ca33db0ef806b569d/index.html#)
+[HowsTheWeather](https://rawcdn.githack.com/carlosprietobarron/howstheweather/b61ebb1ce041ef68b849243b23c490b82b8e0fdf/index.html)
 
 ## How to install
 
