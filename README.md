@@ -13,7 +13,7 @@
 
 ## Live Demo
 
-[HowsTheWeather](https://rawcdn.githack.com/carlosprietobarron/howstheweather/b61ebb1ce041ef68b849243b23c490b82b8e0fdf/index.html)
+[HowsTheWeather](https://rawcdn.githack.com/carlosprietobarron/howstheweather/3eb290f2f3804a01a560040896a774b41795e8cd/index.html)
 
 ## How to install
 
