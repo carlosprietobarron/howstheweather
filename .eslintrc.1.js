@@ -1,14 +1,15 @@
-{
+module.exports = {
     "env": {
-      "browser": true,
-      "es6": true,
-      "jest": true
+        "browser": true,
+        "es2020": true
     },
+    "extends": [
+        "airbnb-base"
+    ],
     "parserOptions": {
-      "ecmaVersion": 2018,
-      "sourceType": "module"
+        "ecmaVersion": "2018",
+        "sourceType": "module"
     },
-   
     "rules": {
       "no-shadow": "off",
       "no-param-reassign": "off",
@@ -24,4 +25,4 @@
       "no-alert": "off",
       "no-restricted-syntax": "off"
     }
-  }
+};

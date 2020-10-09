@@ -4,7 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <link rel="stylesheet" href="https://bootswatch.com/4/sandstone/bootstrap.min.css">
+    <link rel="stylesheet" href="https://bootswatch.com/4/slate/bootstrap.min.css">
     <link rel="stylesheet" href="./css/style.css">
     <link rel="stylesheet" href="./css/fixed.css">
 
@@ -22,8 +22,8 @@
       <div class="col-md-6 mx-auto text-center bg-primary mt-5 p-5 rounded" id="data-display">
         <h1 id="weather-Loc"></h1>
         <h3 class="text-dark" id="weather-Text"></h3>
-        <div class="card text-white bg-primary mb-3" style="max-width: 20rem;">
-                <div class="card-header">Header
+        <div class="card text-white bg-primary mb-3 mx-auto" style="max-width: 20rem;">
+                <div class="card-header">Location
                    <h3 id="weather-string"></h3>
                    <img id="weather-icon">
                    <div class="container">
@@ -47,20 +47,20 @@
                    
                 </div>
                 <div class="card-body">
-                  <h4 class="card-title" id="weather-contition"></h4>
-                  <div class="row-cols-2">
+                  <h4 class="card-title" id="weather-contition">Working on it!</h4>
+                  <div class="row row-cols-2">
                       <div class="col">
                           <h6 id="min-Temp"></h6>
                       </div>
                       <div class="col">
-                            <h6 id="max-Temp"></h6>
+                          <h6 id="max-Temp"></h6>
                         </div>
                   </div>
                   
                 </div>
         </div>
         <button type="button" class="btn btn-primary" id="btn-location" data-toggle="modal" data-target="#cityForm">
-            City
+            Change Location
           </button>
       </div>
     </div>
@@ -70,7 +70,7 @@
         <div class="modal-dialog" role="document">
           <div class="modal-content">
             <div class="modal-header">
-              <h5 class="modal-title" id="locModalLabel">Choose Location</h5>
+              <h5 class="modal-title" id="locModalLabel">Name Your Location</h5>
               <button type="button" class="close" data-dismiss="modal" aria-label="Close">
                 <span aria-hidden="true">&times;</span>
               </button>
@@ -79,18 +79,32 @@
               <form id="w-form">
                 <div class="form-group">
                   <label for="city">City</label>
-                  <input type="text" id="city" class="form-control">
+                  <input type="text" id="city-Name" class="form-control">
                 </div>
               </form>
             </div>
             <div class="modal-footer">
               <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
-              <button id="w-change-btn" type="button" class="btn btn-primary">Save changes</button>
+              <button id="change-btn" type="button" class="btn btn-primary" data-dismiss="modal">Change Loc.</button>
             </div>
           </div>
         </div>
-      </div>
- 
+   </div>
+   <div id="alert-modal" class="modal fade">
+        <div class="modal-dialog">
+          <div class="modal-content">
+            <div class="modal-header">
+              <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+              <h4 id="alert-modal-title" class="modal-title"></h4>
+            </div>
+            <div id="alert-modal-body" class="modal-body"></div>
+            <div class="modal-footer">
+              <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+            </div>
+          </div>
+        </div>
+    </div>
+
     <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.3/umd/popper.min.js" integrity="sha384-vFJXuSJphROIrBnz7yo7oB41mKfc8JzQZiCq4NCceLEaO4IHwicKwpJf9c9IpFgh" crossorigin="anonymous"></script>
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta.2/js/bootstrap.min.js" integrity="sha384-alpBpkh1PFOepccYVYDB4do5UnbKysX5WZXm3XxPqe5iKTfUKjNkCk9SaVuEZflJ" crossorigin="anonymous"></script>

@@ -1,6 +1,14 @@
 import { httpLibrary } from './httpLibrary'
 import { domcon } from './ui'
 
+class NoLocationError extends Error {
+  constructor(message) {
+    super(message); // (1)
+    this.name = "Location_not_found"; // (2)
+  }
+}
+
+
 class cityWeather {
   constructor (cityName, temp, maxtemp, mintemp, clouds, wind, desc, icon ){
     this.cityName = cityName;
@@ -56,38 +64,60 @@ const getWeather = ( () =>{
     
   
     const getWeaNow =  async (cityName) => {
-      const weaVar = await getData2(cityName);
-      console.log(weaVar.main);
-      console.log(weaVar);
+      let weaVar; 
+      let weder;
+      let messageError;
+      try {
+      weaVar = await getData2(cityName);
+      console.log("code",weaVar.cod);
+      if (weaVar.cod == "404" ) {
+        
+        messageError = 'Location no found!'
+        throw new NoLocationError(messageError);
+        
+        
+      }
+     
 
-      const {main: {temp, temp_max, temp_min, feels_like}, clouds: { all: cloud }, weather:[item1] } = weaVar;
+      const {main: {temp, temp_max, temp_min, feels_like}, clouds: { all: cloud }, weather:[item1], cod, message } = weaVar;
       const { description, icon } = item1;
       console.log("temps", temp, temp_max, temp_min);
       console.log("cloud", cloud);
       console.log("item1", item1 , description);
+      
 
-      const weder = new cityWeather(cityName,temp,temp_max,temp_min,cloud,"0",description, icon);
+      weder = new cityWeather(cityName,temp,temp_max,temp_min,cloud,"0",description, icon);
 
       console.log(weder);
-
+      domcon.displayWeather(weder);
+      } catch (error) {
+        domcon.alertModal("Search Error", error.message);
+      }
+      
+      domcon.cleanForm();
       return weder;
     };
 
     const getWeaLocal =  async (position) => {
-      const weaVar = await getData3(position);
+      let weaVar;
+      let weder; 
+      try {
+
+      weaVar = await getData3(position);
       console.log(weaVar.main);
       console.log(weaVar);
 
       const {main: {temp, temp_max, temp_min, feels_like}, name ,clouds: { all: cloud }, weather:[item1] } = weaVar;
       const { description, icon } = item1;
-      console.log("temps", temp, temp_max, temp_min);
-      console.log("cloud", cloud);
-      console.log("item1", item1 , description);
-      console.log("name", name);
-
-      const weder = new cityWeather(name,temp,temp_max,temp_min,cloud,"0",description, icon);
+      
+      weder = new cityWeather(name,temp,temp_max,temp_min,cloud,"0",description, icon);
  
       console.log(weder);
+        
+      } catch (error) {
+        domcon.alertModal("Search Error", error.message);
+      }
+      
       
       domcon.displayWeather(weder);
 
