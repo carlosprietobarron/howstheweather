@@ -9,4 +9,3 @@ const initialize = () => {
 
 initialize();
 geoLib.geoLocal();
-// getDATA(cityName, getWeather.getWeaNow);

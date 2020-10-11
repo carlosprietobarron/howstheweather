@@ -4,7 +4,9 @@
   "description": "Weather Java script app, consuming an API service",
   "main": "index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "dev": "webpack --mode development",
+    "build": "webpack"
   },
   "repository": {
     "type": "git",

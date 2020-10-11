@@ -142,7 +142,7 @@ eval("__webpack_require__.r(__webpack_exports__);\n/* harmony export (binding) *
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
-eval("__webpack_require__.r(__webpack_exports__);\n/* harmony import */ var _city__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ./city */ \"./src/city.js\");\n/* harmony import */ var _ui__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ./ui */ \"./src/ui.js\");\n\r\n\r\n\r\nconst initialize = () => {\r\n  _ui__WEBPACK_IMPORTED_MODULE_1__[\"domcon\"].createIcon();\r\n  _ui__WEBPACK_IMPORTED_MODULE_1__[\"domcon\"].setBtnEvent();\r\n  _ui__WEBPACK_IMPORTED_MODULE_1__[\"domcon\"].setToggle();\r\n};\r\n\r\ninitialize();\r\n_city__WEBPACK_IMPORTED_MODULE_0__[\"geoLib\"].geoLocal();\r\n// getDATA(cityName, getWeather.getWeaNow);\r\n\n\n//# sourceURL=webpack:///./src/index.js?");
+eval("__webpack_require__.r(__webpack_exports__);\n/* harmony import */ var _city__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ./city */ \"./src/city.js\");\n/* harmony import */ var _ui__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ./ui */ \"./src/ui.js\");\n\r\n\r\n\r\nconst initialize = () => {\r\n  _ui__WEBPACK_IMPORTED_MODULE_1__[\"domcon\"].createIcon();\r\n  _ui__WEBPACK_IMPORTED_MODULE_1__[\"domcon\"].setBtnEvent();\r\n  _ui__WEBPACK_IMPORTED_MODULE_1__[\"domcon\"].setToggle();\r\n};\r\n\r\ninitialize();\r\n_city__WEBPACK_IMPORTED_MODULE_0__[\"geoLib\"].geoLocal();\r\n\n\n//# sourceURL=webpack:///./src/index.js?");
 
 /***/ }),
 

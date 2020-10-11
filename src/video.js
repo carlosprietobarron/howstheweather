@@ -2,7 +2,6 @@ const videoLooper = (function vd() {
   function looper(elem) {
     if (elem.currentTarget.currentTime >= 4) {
       elem.currentTarget.currentTime = 1;
-    // elem.play();
     }
   }
 
