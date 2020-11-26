@@ -1,0 +1,36 @@
+{
+  "name": "howstheweather",
+  "version": "1.0.0",
+  "description": "Weather Java script app, consuming an API service",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "dev": "webpack --mode development",
+    "build": "webpack"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/carlosprietobarron/howstheweather.git"
+  },
+  "keywords": [],
+  "author": "Carlos Prieto",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/carlosprietobarron/howstheweather/issues"
+  },
+  "homepage": "https://github.com/carlosprietobarron/howstheweather#readme",
+  "dependencies": {
+    "eslinter": "^3.2.1",
+    "webpack": "^4.44.2"
+  },
+  "devDependencies": {
+    "eslint": "^7.10.0",
+    "eslint-config-airbnb-base": "^14.2.0",
+    "eslint-plugin-import": "^2.22.1",
+    "stylelint": "^13.3.3",
+    "stylelint-config-standard": "^20.0.0",
+    "stylelint-csstree-validator": "^1.8.0",
+    "stylelint-scss": "^3.17.2",
+    "webpack-cli": "^3.3.12"
+  }
+}
