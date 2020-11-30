@@ -29,7 +29,11 @@ Enjoy!
 
 ## Authors
 
-👤 Carlos Prieto Barron
+👤 **Carlos Prieto**
+- Github: [@carlosprietobarron](https://github.com/carlosprietobarron)
+- Linkedin: [Carlos Prieto](https://www.linkedin.com/in/carlosprietobarron/)
+- Email: [Carlos Prieto Barrón](carloprietobarron@outlook.com)
+
 
 - Github: [@carlosprietobarron](https://github.com/carlosprietobarron)
 
