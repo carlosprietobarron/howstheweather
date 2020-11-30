@@ -34,9 +34,6 @@ Enjoy!
 - Linkedin: [Carlos Prieto](https://www.linkedin.com/in/carlosprietobarron/)
 - Email: [Carlos Prieto Barrón](carloprietobarron@outlook.com)
 
-
-- Github: [@carlosprietobarron](https://github.com/carlosprietobarron)
-
 ## 🤝 Contributing
 
 Contributions, issues and feature requests are welcome!
